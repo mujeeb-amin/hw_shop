@@ -1,3 +1,3 @@
 # hw shop
 python project.
-Tasting
+Tasting.
