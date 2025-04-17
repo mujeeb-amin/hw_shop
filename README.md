@@ -1,2 +1,3 @@
 # hw shop
-python project
+python project.
+Tasting
