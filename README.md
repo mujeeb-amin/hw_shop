@@ -1,4 +1,4 @@
 # hw shop
 python project.
-second line.
+Second line.
 Tasting.
