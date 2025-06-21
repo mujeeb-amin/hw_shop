@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 
-class category(models.Model):
+class Category(models.Model):
     name = models.CharField(max_length=250)
 
     def __str__(self):
@@ -15,12 +15,12 @@ class category(models.Model):
         verbose_name_plural = "categories"
 
 
-class product(models.Model):
+class Product(models.Model):
     title = models.CharField(
         max_length=120,
     )
     price = models.FloatField(default=10)
-    catagory = models.ForeignKey(category, on_delete=models.CASCADE)
+    catagory = models.ForeignKey(Category, on_delete=models.CASCADE)
     created_date = models.DateTimeField(auto_now_add=True)
     updated_date = models.DateTimeField(auto_now=True)
     type = models.CharField(
