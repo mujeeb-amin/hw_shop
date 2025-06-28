@@ -20,8 +20,11 @@ from django.urls import path, include
 
 from dashbord.views import home
 
+
+app_name = "products"
+
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", home),
+    path("", home, name="home"),
     path("products/", include("products.urls")),
 ]

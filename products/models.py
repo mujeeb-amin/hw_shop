@@ -20,7 +20,7 @@ class Product(models.Model):
         max_length=120,
     )
     price = models.FloatField(default=10)
-    catagory = models.ForeignKey(Category, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
     created_date = models.DateTimeField(auto_now_add=True)
     updated_date = models.DateTimeField(auto_now=True)
     type = models.CharField(

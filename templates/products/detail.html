@@ -2,11 +2,11 @@
 
 
 {% block content %}
-  <div>
-    <h5>Title: {{product.title}}</h5>
-    <p class="card-text">Price: {{product.Price}}AFN</p>
-    <p class="card-text">Is published: {{product.is_published}}</p>
-    <p class="card-text">Created At: {{product.created_date}}</p>
-    <p class="card-text">Updated At: {{product.updated_date}}</p>
+  <div class="d-flex flex-column align-items-center">
+    <h5 class="fw-bold">Title: {{product.title}}</h5>
+    <p class="fs-5 text-muted card-text">Price:<span class="badge bg-success">{{product.price}}AFN</span></p>
+    <p class="text-muted card-text">Is published:<strong> {{product.is_published}}</strong></p>
+    <p class=" text-muted card-text">Created At:<strong>{{product.created_date}}</strong> </p>
+    <p class="text-muted card-text">Updated At:<strong>{{product.updated_date}}</strong></p>
   </div>
 {% endblock content %}
